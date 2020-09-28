@@ -43,7 +43,7 @@ def get_kern_list(idx):
 def generate_grub_file(f, target_kern):
     if DEBUG: print('[DEBUG]    Preparing grub for kernel: ' + target_kern)
     if DEBUG: print('[DEBUG]--------------------------------------------------')
-
+    
     if not os.path.exists(f):
         raise ValueError("File %s does not exist." % f)
 
@@ -77,7 +77,7 @@ def install_grub_file():
 
 def restart():
     print('[INFO] Restarting the machine now.')
-    print("nah, blocked")
+    #print("nah, blocked")
     call(['sudo', 'reboot'])
 
 
