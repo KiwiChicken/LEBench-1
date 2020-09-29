@@ -22,6 +22,8 @@ with open('raw_kern', 'r') as fp:
             #second_version = version_seg[1]
             ident = []
             print(version_seg)
+            if version_seg[0] == "4.9.2374.9.237":
+                continue
             for s in first_versions:
                 ident.append(int(s))
             length = len(ident)
